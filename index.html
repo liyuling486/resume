@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.bumpytext.packed.js"></script>
+    <script src="js/easying.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        window.onload=function(){
+            new WOW().init();//初始化
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.tr').bumpyText();
+
+        })
+    </script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                menu: '#menu'
+            });
+        });
+    </script>
+        
+    <title>李玉玲</title>
+</head>
+<body>
+<ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">基本介绍</a></li>
+    <li data-menuanchor="page2"><a href="#page2">我的技能</a></li>
+    <li data-menuanchor="page3"><a href="#page3">Vue App</a></li>
+    <li data-menuanchor="page4"><a href="#page4">购物网站</a></li>
+    <li data-menuanchor="page5"><a href="#page5">自我评价</a></li>
+</ul>
+            
+<div id="dowebok">
+    <!-- 一屏 -->
+    <div class="section one">
+        <div class="tr">Welcome to my resume</div>
+        <div class="msg wow flipInY" 
+        data-wow-offset="10">
+            <ul>
+                <li>姓名： 李玉玲</li>
+                <li>年龄： 21</li>
+                <li>学历： 专科</li>
+                <li>Phone: 17604665960</li>
+                <li>Mail： liyuling_5960@163.com</li>
+            </ul>
+        </div>    
+    </div>
+    <!-- 二屏 -->
+    <div class="section two">
+        <div class="col-md-offset-3 col-md-6 clearfix">
+                <h3 class="progressbar-title">HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 76%; background: #FFEB68;">
+                    </div>
+                </div>
+        
+                <h3 class="progressbar-title">CSS3</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 82%; background: #FF747A;">
+                    </div>
+                </div>
+                  
+                <h3 class="progressbar-title">java script</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 78%; background: #3C759C;">
+                    </div>
+                </div>
+
+                <h3 class="progressbar-title">ES6</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 67%; background: #00B6FD;">
+                    </div>
+                </div>    
+
+                <h3 class="progressbar-title">VUE</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%; background: #00DBB0;">
+                    </div>
+                </div>   
+
+                <h3 class="progressbar-title">jquery</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 62%; background: #FFD980;">
+                    </div>
+                </div>      
+        </div>
+        <span class="skill">我的技能</span>
+                    
+    </div>
+    <!-- 三屏 -->
+    <div class="section three">
+        <ul class="txt">
+            <li>使用vue框架，以及vue-router构建单页面应用。</li>
+            <li>项目采用vuex处理各组件间的通讯，通过vue-cli 快速搭建开发环境。</li>
+            <li>使用了钩子函数实现到底部继续加载，通过 axios 与后端通信。</li>
+            <li>运用vue.js中的指令和服务与后台接口对接，进行数据交互，进行页面渲染，实现功能 模块的判断。</li>
+            <li>运用swiper框架进行部分页面的设计。<a href="https://github.com/liyuling486/keep">github链接</a></li>
+        </ul>
+    </div>
+    <!-- 四屏 -->
+    <div class="section four">
+        <ul class="txt">
+            <li>自行封装了轮播、定时器、放大镜、手机号验证等。</li>
+            <li>用JS完成购物车及登录页面的验证。</li>
+            <li>用html5、css3实现动画效果,提高用户体验。<a href="https://github.com/liyuling486/shopping">github链接</a></li>
+        </ul>
+    </div>
+    <!-- 五屏 -->
+    <div class="section five">
+        <p>自 我 评 价&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <ul>
+            <li>生活态度乐观、积极、向上、勇于面对变化和挑战</li>
+            <li>具有快速学习和独立思考的能力</li>
+            <li>乐于主动沟通；具有很强的团队精神</li>
+            <li>具有较好的创新意识，易于接受新事物、适应新环境</li>
+        </ul>
+    </div>
+</div>
+
+
+
+</body>
+</html>
