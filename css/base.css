@@ -251,6 +251,12 @@ body{
     background: rgba(66,66,66,.7);
     border-radius: 10px;
     padding: 20px;
+    opacity: 0.6;
+    transition: 1.5s;
+}
+.three .txt:hover{
+    opacity: 1;
+    transition: 1.5s;
 }
 .three .txt a{
     margin-left: 200px;
@@ -272,10 +278,16 @@ body{
     border-radius: 10px;
     padding: 20px;
     overflow: hidden;
+    opacity: 0.6;
+    transition: 1.5s;
 }
 .four .txt a{
     float: right;
     color: #8CF8F5;
+}
+.four .txt:hover{
+    opacity: 1;
+    transition: 1.5s;
 }
 
 /* 五屏 */
@@ -298,8 +310,13 @@ body{
     float: left;
     margin: 30px;
     padding: 20px;
+    transition: 1s;
 }
-
+.five ul li:hover{
+    /* transform: rotate(360) */
+    transform: scale(1.4);
+    transition: 1s;
+}
 
 
 
